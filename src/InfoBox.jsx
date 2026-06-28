@@ -17,11 +17,15 @@ export default function InfoBox ({weatherInfo}) {
 
     return (
         <div className='InfoBox'>
-            <h1>Wethaer Information</h1>
+            <h1>Weather Information</h1>
              <div className="card-container">
-                <Card sx={{ maxWidth: 345 }}>
+                <Card sx={{ 
+    maxWidth: 420,
+    borderRadius: "20px",
+    boxShadow: "0 8px 20px rgba(0,0,0,0.25)"
+}}>
                 <CardMedia
-                    sx={{ height: 140 }}
+                    sx={{ height: 220 }}
                     image={info.humidity > 80 ? RAINY_URL : (info.temp > 15) ? HOT_URL :COLD_URL}
 
                     title="green iguana"
