@@ -35,11 +35,11 @@ export default function InfoBox ({weatherInfo}) {
                     {info.city} {info.humidity > 80 ? <ThunderstormIcon/> : (info.temp > 15) ? <SunnyIcon/> :<AcUnitIcon/>}
                  </Typography>
                  <Typography variant="body2" sx={{ color: 'text.secondary' }} component="span">
-                    <p>Temrature : {info.temp}</p>
+                    <p>Temrature : {info.temp$deg;C}</p>
                     <p>Humidity : {info.humidity}</p>
-                    <p>Min Temp : {info.tampMin}</p>
-                    <p>Max Temp : {info.tampMax}</p>
-                    <p>The Weather can be described as {info.weather} and fells like {info.feels_like}</p>
+                    <p>Min Temp : {info.tampMin$deg;C}</p>
+                    <p>Max Temp : {info.tampMax$deg;C}</p>
+                    <p>The Weather can be described as {info.weather} and fells like {info.feels_like$deg;C}</p>
                 </Typography>
             </CardContent>
             </Card>
